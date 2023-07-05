@@ -24,4 +24,3 @@ const namedFunction = function Xyz() {
 }
 
 
-// 5. Anom
