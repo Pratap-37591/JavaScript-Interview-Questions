@@ -9,10 +9,13 @@ const fruits = [
   "Lemon",
 ];
 
+
+
+
 // by using set method
 
 // 1 : Normal using new keyword with Set operator
-// const uniqueFruits = new Set(fruits);
+const uniqueFruits = new Set(fruits);
 
 // 2 : using Spread Operator
 // const uniqueFruits = [...new Set(fruits)];
