@@ -11,7 +11,6 @@ const fruits = [
 
 
 
-
 // by using set method
 
 // 1 : Normal using new keyword with Set operator
