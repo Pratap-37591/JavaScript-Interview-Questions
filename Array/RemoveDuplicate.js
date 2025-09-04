@@ -19,10 +19,10 @@ console.log(RemoveDuplicates(array));
 
 // 2 Using filter + indexOf
 
-console.log(array.filter((cur, index, arr) => array.indexOf(cur) === index));
+console.log(array.filter((cur, index, arr) => arr.indexOf(cur) === index));
 
 function RemoveDuplicates(arr) {
-  return arr.filter((cur, index) => arr.indexOf(cur) === index);
+  return arr.filter((cur, index, array) => array.indexOf(cur) === index);
 }
 
 console.log(RemoveDuplicates(array));
@@ -69,3 +69,15 @@ function RemoveDuplicates(arr) {
 }
 
 console.log(RemoveDuplicates(array), "For LOOP");
+
+// =========================================================================================================
+
+// 5 Using Sort + filter
+
+function RemoveDuplicates(arr) {
+  return arr
+    .sort((a, b) => a - b)
+    .filter((item, index, sortedArr) => item !== sortedArr[index - 1]);
+}
+
+console.log(RemoveDuplicates(array), "Sort");

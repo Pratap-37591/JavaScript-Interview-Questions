@@ -1,4 +1,4 @@
-// Print a smaller number from 3 given numbers
+// Print a smaller number from  given numbers
 
 
 // Method 1:
